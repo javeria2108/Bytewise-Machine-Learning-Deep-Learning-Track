@@ -80,3 +80,29 @@ After merging, we can delete the other temporary branch:
 ```sh
 git branch -d another-branch-name
 ```
+# GitHub
+
+To connect our local git repository to our new repository on GitHub:
+```sh
+git remote add origin URL
+```
+
+Now to push our master branch to the remote repository:
+```sh
+git push --set-upstream origin master
+```
+
+`git pull` is used to fetch all changes from the tracked branch to your local repository.
+
+When we create a new branch using the GUI on GitHub, we can pull it to our local repository using:
+```sh
+git pull
+```
+
+If we create a new branch locally and want to push it to GitHub, we can use:
+```sh
+git push origin new-branch
+```
+## For Contributing: 
+We fork the repository we want to contribute to. Then we clone the code to our device and open it in our code editor. We check the existing remote origins and add the URL of our forked repo as another remote origin. After we are finished with the changes we can commit the changes to our origin. This will make our branch ahead of the original repo branch. So we can raise a pull request and add a suitable description for our changes to be reviewed by others who have access to the default branch. If they approve the changes they merge our branch with theirs. 
+
